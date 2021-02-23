@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Brasil</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+    <header>
+        <h1>I.M.C - Índice de Massa Corporal</h1>
+    </header>
+<body>
+    <section>
+        <div>
+            <p>Peso: <input type="number" class="float" name="peso" id="peso"></p>
+            <p>Altura: <input type="number" class="float" name="altura" id="altura"></p>
+
+            <p>Sexo: 
+            <input type="radio" name="radsex" id="mulher" checked>
+            <label for="mulher">Feminino</label>
+            <input type="radio" name="radsex" id="homem">
+            <label for="homem">Masculino</label></p>
+
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </section>
+
+    <section2>
+        <div id="res">
+            <p> Seu resultado será exibido aqui... </p>
+        </div>
+    </section2>
+</body>
+    <footer>
+        <p>&copy; JoãoGuilhermeMendes</p>
+    </footer>
+    <script src ="script.js"> </script>
+</html>

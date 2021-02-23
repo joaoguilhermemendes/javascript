@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Primeiros passos com DOM</title>
+    <Style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font: normal 15pt Arial;
+            color: rgb(218, 61, 205);
+        }
+    </Style>
+</head>
+    
+</body>
+    <h1>Começando a trabalhar com DOM </h1>
+
+    <p> Desde criança every tive muita vontade de programar </p>
+    <p> aprendendo a utilizar o <strong>DOMO</strong> em javascript </p>
+
+    <div id ='msg'> CLIQUE EM MIM:
+        
+    </div>
+    <script>
+        //document.write(p1.innerText)
+        //document.write(p1.innerText) 
+        
+         //var corpo = document.body
+         
+          //1- primeiro paragrafo
+         //p1.style.color = 'pink'
+         document.write('Está escrito assim: ' + p1.innerHTML)
+         //window.document.write(window.navigator.appName)
+         var d = window.document.getElementById('msg')
+         //d.style.background = 'green'
+         document.write('Está escrito assim: ' + d.innerHTML)
+         //corpo.style.backgroundColor = 'pink'
+         d.innerHTML = 'Estou aguardando ...'
+         //div1.style.backgroundColor = 'Green' 
+        
+
+         //document.body.style.backgroundColor = 'gray'
+         //d.style.backgroundColor = 'green'
+         //let a = document.querySelector('div#msg')
+         //a.style.background = 'purple'
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+
+    
+<style>
+
+    body {
+        background-color: grey;
+    }
+    
+    h1 {
+        background-color: rgb(0, 0, 0);
+        width: 750px;
+        height: auto;
+        color: rgb(99, 205, 212);
+        font: normal 50pt Arial;
+    }
+
+    p {
+        background-color: rgb(99, 205, 212);
+        font: normal 18pt Arial;
+        line-height: normal;
+        text-align: center;
+        width: 900px;
+        height: auto;
+    }
+
+    button {
+        background-color: aqua;
+        size: 100cm;
+        width: 900px;
+        height: 25px;
+    }
+</style>
+
+    <h1> Consultor de Velocidade </h1>
+    <div id='priemiro'> <p> Bom  cidadão, Digite a velocidade em que estava trafegando e diremos se estava nas conformidades da jurisprudência de velocidade máxima de </strong>60KM/H</strong>: </p></div>
+</head>
+<body>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Consultar"  height="10%" width="500%"    onclick="clicar()"     >
+<div id=res >  </div>
+<div id=conclusao > </div>
+
+    <script>
+        function clicar() {
+            var vel = document.getElementById('txtvel')
+            var a = document.getElementById('conclusao')
+            var v = Number(vel.value)
+            res.innerHTML = `<p>A velocidade atual é de: <strong>${v}</strong></p>`
+
+            if ( v > 60) {
+                conclusao.innerHTML = `<p> Você ultrapassou o limite de velocidade. MULTADO!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
